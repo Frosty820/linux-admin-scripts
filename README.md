@@ -27,5 +27,12 @@ userdel: tempdev mail spool (/var/mail/tempdev) not found
 Configures firewall with SSH access while denying all other inbound traffic.
 
 **Usage:**
-```bash
+
 sudo bash ./firewall-setup.sh
+
+
+-backup automation
+
+**Usage** ./backup-automation.sh
+**output** 54M Dec 28 20:40 /tmp/backups/backup-XXXXXX
+I also used crontab to make this happen at 2am everyday
