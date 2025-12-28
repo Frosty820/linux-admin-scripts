@@ -22,3 +22,10 @@ User created
 Set password for tempdev
 tempdev : tempdev sudo
 userdel: tempdev mail spool (/var/mail/tempdev) not found
+
+-firewall-setup.sh
+Configures firewall with SSH access while denying all other inbound traffic.
+
+**Usage:**
+```bash
+sudo bash ./firewall-setup.sh
