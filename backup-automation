@@ -1,0 +1,19 @@
+#!/bin/bash
+BACKUP_DIR="/tmp/backups"
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+ARCHIVE_NAME="backup-$TIMESTAMP.tar.gz"
+
+dest="$BACKUP_DIR/$ARCHIVE_NAME"
+
+
+mkdir -p $BACKUP_DIR
+
+sudo tar -czf $dest /etc /home
+
+if [ -f "$dest" ]; then
+  echo "File exists"
+else
+	echo "File doesnt exist"
+fi
+
+ls -lh $dest
