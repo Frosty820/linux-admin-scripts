@@ -14,3 +14,11 @@ monitors root partition disk usage and alerts when above 80%
 - "disk is vulnerable" (if > 80%)
 - "disk has suffecient space at %X" (if<80%)
 
+-User life cycle
+
+**Usage** "sudo bash ./user-mgmt.sh"
+**Output** 
+User created
+Set password for tempdev
+tempdev : tempdev sudo
+userdel: tempdev mail spool (/var/mail/tempdev) not found
