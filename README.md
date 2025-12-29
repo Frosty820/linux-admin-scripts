@@ -36,3 +36,12 @@ sudo bash ./firewall-setup.sh
 **Usage** ./backup-automation.sh
 **output** 54M Dec 28 20:40 /tmp/backups/backup-XXXXXX
 I also used crontab to make this happen at 2am everyday
+
+
+
+-system health script
+
+a script that checks, load time, memory used and disk usage
+
+**usage** ./system-health.sh
+**output** DISK: OK MEM: OK LOAD: OK
