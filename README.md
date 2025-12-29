@@ -45,3 +45,4 @@ a script that checks, load time, memory used and disk usage
 
 **usage** ./system-health.sh
 **output** DISK: OK MEM: OK LOAD: OK
+**Thresholds:** Disk/memory >80% = WARNING, >90% = CRITICAL. Load < cores = OK, <2x cores = WARNING, >=2x cores = CRITICAL.
